@@ -47,6 +47,17 @@ My DotFiles
 
   * Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
 
+  * oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
+    * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+    * Spaceship-zsh-theme Powered by [Spaceship-zsh-theme](https://github.com/denysdovhan/spaceship-zsh-theme)
+
+    * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
+
+    * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
+
+    * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
+
 
 # **ENGLISH**
   This repository contains some configurations for my linux desktop.
