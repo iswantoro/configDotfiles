@@ -231,7 +231,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='colorls -r --sf'
+alias lc='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
@@ -256,5 +256,6 @@ export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 #exec sh ~/.config/polybar/launch.sh
 
 source "/home/ypraw/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-source /home/ypraw/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ./	zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/ypraw/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
