@@ -138,7 +138,7 @@ SPACESHIP_EXIT_CODE_COLOR="red"
 
 # zsh-syntax-highlighting
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-ZSH_HIGHLIGHT_PATTERNS+=("rm -rf *" "fg=white,bold,bg=yellow")
+ZSH_HIGHLIGHT_PATTERNS+=("rm -rf *" "fg=white,bold,bg=green")
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]="fg=green"
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]="fg=blue"
@@ -149,14 +149,15 @@ ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]="fg=cyan"
 ZSH_HIGHLIGHT_STYLES[command]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
 ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=red'
-ZSH_HIGHLIGHT_STYLES[commandseparator]="fg=yellow"
+ZSH_HIGHLIGHT_STYLES[commandseparator]="fg=green"
 ZSH_HIGHLIGHT_STYLES[redirection]="fg=magenta"
 ZSH_HIGHLIGHT_STYLES[bracket-level-1]="fg=cyan,bold"
 ZSH_HIGHLIGHT_STYLES[bracket-level-2]="fg=green,bold"
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]="fg=magenta,bold"
-ZSH_HIGHLIGHT_STYLES[bracket-level-4]="fg=yellow,bold"
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]="fg=red,bold"
 ZSH_HIGHLIGHT_STYLES[globbing]='none'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=green  '
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=blue'
 
 
