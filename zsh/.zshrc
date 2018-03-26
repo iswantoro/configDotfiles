@@ -41,7 +41,7 @@ SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "
 
 # TIME
 SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_COLOR="178"
+SPACESHIP_TIME_COLOR="yellow"
 SPACESHIP_TIME_FORMAT="\uf274%D{ %a,%d %B %Y}"
 
 # USER
@@ -177,7 +177,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='colorls -r --sf'
+#alias ls='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
@@ -188,11 +188,10 @@ alias php-server-stop='sudo systemctl stop httpd mysqld && sudo systemctl status
 
 alias php-server-status=' sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
 
-#alias anaconda='source /opt/anaconda/bin/activate'
+#alias anaconda='source /home/ypraw/anaconda3/bin/activate'
 
-# added by Anaconda3 4.4.0 installer
-#export PATH="/home/ypraw/anaconda3/bin:$PATH"
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export PATH="/home/ypraw/anaconda3/bin:$PATH"
 
 # Weather widget on polybar (exec script weather.py)
 #export weather="$(~/.config/polybar/weather.py)"
@@ -200,8 +199,13 @@ export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # Polybar adding
 #export RUN="$(bash ~/.config/polybar/launch.sh)"
 #exec sh ~/.config/polybar/launch.sh
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_prompt_command
+fi
 
 source "/home/ypraw/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 source ./	zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/ypraw/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
