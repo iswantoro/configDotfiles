@@ -7,14 +7,17 @@ My DotFiles
 </h1>
 </p>
 
-# **INDONESIAN**
-  Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
-
 ## Gnome di Manjaro
   ![ss1](/Screenshoot/ss1.png)
+  Run on the screen : neofetch, vis
 
 ## KDE di Manjaro
   ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
+  Run on the screen : neofetch, cava, spacevim 
+
+
+# **INDONESIAN**
+  Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
 
   _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
 
