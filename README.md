@@ -41,9 +41,8 @@ My DotFiles
     Saya menggunakan [**font awesome**](https://fontawesome.com/) untuk glyphy yang digunakan dan [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
 
     Berikutnya lakukan sesuai keinginan anda.
- 
-  * cava Powered by [Karstav](https://github.com/karlstav/cava)
-  
+
+
   * Polybar powered by
     [jaagr](https://github.com/jaagr/polybar)
 
@@ -121,6 +120,8 @@ _**NOTE :** You can found **```how to install```** them on official page_
     * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
 
     * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
+
+   
 
     * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
 
