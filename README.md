@@ -24,19 +24,30 @@ My DotFiles
 
   * Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
 
-     Konfigurasi dapat dilihat [disini](/neofetch).
-     Untuk menampilkan unicode pada custom config neofetch, gunakan command substitution pada file custom config.
+    Untuk mengetes apakah konfigurasi fontawesome sudah dikenali pada system anda, cobalah untuk membuka terminal dan ketikkan kode berikut,
 
-     contoh,
+    ```bash
+     perl -CS -E 'say "\x{f19c}"'
+    ```
 
-     ```bash
-     info "$(perl -CS -E 'say "\x{f19c}"') " title
-     ```
-     pada contoh diatas, kode _f19c_ merupakan unicode [university](https://fontawesome.com/icons/university?style=solid) .
+    Jika hasilnya adalah icon university maka masukkan perintah ini pada file config neofetch anda.
 
-     Saya menggunakan **font awesome** untuk glyphy yang digunakan, untuk referensi lanjutan [Font Awesome](https://fontawesome.com/).
+    ![ss3](/Screenshoot/Screenshot_20180330_235416.png)
+    
+    Untuk menampilkan unicode pada custom config neofetch, gunakan command
+    substitution pada file custom config.
+    Konfigurasi dapat dilihat [disini](/neofetch).
 
-     Berikutnya lakukan sesuai keinginan anda.
+    contoh,
+
+    ```bash
+    info "$(perl -CS -E 'say "\x{f19c}"') " title
+    ```
+    pada contoh diatas, kode _f19c_ merupakan unicode [university](https://fontawesome.com/icons/university?style=solid) .
+
+    Saya menggunakan **font awesome** untuk glyphy yang digunakan, untuk referensi lanjutan [Font Awesome](https://fontawesome.com/).
+
+    Berikutnya lakukan sesuai keinginan anda.
 
 
   * Polybar powered by
@@ -63,21 +74,34 @@ My DotFiles
 
 # English
 This repository contains all configuration for my linux desktop appearance.
-You can found how to install them on official page below this :
+And this is a list of libraries or apps i use.
+
+_**NOTE :** You can found **```how to install```** them on official page_
 
 * Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
+    
+    To use my config [here](/neofetch), your terminal must support fontawesome.
+    Run the command below,
 
-     you can see my config [here](/neofetch).
-     For showing unicode on neofetch, i use command subtitution in my custom config file
+    ```bash
+     perl -CS -E 'say "\x{f19c}"'
+    ```
+    ![ss4](/Screenshoot/Screenshot_20180330_235416.png)
 
-     example
+    if you see the university icon, you can edit neofetch config with command subtitution below this,
+        
+    example
 
-     ```bash
-     info "$(perl -CS -E 'say "\x{f19c}"') " title
-     ```
-     this commadan for print unicode [university](https://fontawesome.com/icons/university?style=solid) .
+    ```bash
+    info "$(perl -CS -E 'say "\x{f19c}"') " title
+    ```
+    and add alias on .bashrc or .zshrc with following command for the example, 
 
-     I used **font awesome** for the glyphy. for the reference [Font Awesome](https://fontawesome.com/).
+    ```bash
+    alias neo='neofetch --config ~/path/to/neofetch/config.conf'
+    ```
+
+    I used [**font awesome**](https://fontawesome.com/) for the glyphy and [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
 
 
   * Polybar powered by
@@ -100,8 +124,10 @@ You can found how to install them on official page below this :
 
     * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
 
+    * cava Powered by [Karstav](https://github.com/karlstav/cava)
+
     * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-# **Lisence**
+# **License**
 
-  Source is available under the [Mit Lisence](LICENSE.md)
+  Source is available under the [Mit License](LICENSE.md)
