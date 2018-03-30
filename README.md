@@ -13,6 +13,9 @@ My DotFiles
 ## Gnome di Manjaro
   ![ss1](/Screenshoot/ss1.png)
 
+## KDE di Manjaro
+  ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
+
   _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
 
   > Untuk citra manjaro, dapat diunduh di [Manjaro Page](https://manjaro.org)
