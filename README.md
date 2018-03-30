@@ -29,23 +29,16 @@ My DotFiles
     ```bash
      perl -CS -E 'say "\x{f19c}"'
     ```
-
-    Jika hasilnya adalah icon university maka masukkan perintah ini pada file config neofetch anda.
-
     ![ss3](/Screenshoot/Screenshot_20180330_235416.png)
-    
-    Untuk menampilkan unicode pada custom config neofetch, gunakan command
-    substitution pada file custom config.
-    Konfigurasi dapat dilihat [disini](/neofetch).
 
-    contoh,
+    Jika hasilnya adalah icon university seperti gambar diatas, maka masukkan perintah ini pada file config neofetch anda.
+    Konfigurasi dapat dilihat [disini](/neofetch).
 
     ```bash
     info "$(perl -CS -E 'say "\x{f19c}"') " title
     ```
-    pada contoh diatas, kode _f19c_ merupakan unicode [university](https://fontawesome.com/icons/university?style=solid) .
 
-    Saya menggunakan **font awesome** untuk glyphy yang digunakan, untuk referensi lanjutan [Font Awesome](https://fontawesome.com/).
+    Saya menggunakan [**font awesome**](https://fontawesome.com/) untuk glyphy yang digunakan dan [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
 
     Berikutnya lakukan sesuai keinginan anda.
 
@@ -102,6 +95,8 @@ _**NOTE :** You can found **```how to install```** them on official page_
     ```
 
     I used [**font awesome**](https://fontawesome.com/) for the glyphy and [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
+
+    and happy hacking XD.
 
 
   * Polybar powered by
