@@ -41,8 +41,9 @@ My DotFiles
     Saya menggunakan [**font awesome**](https://fontawesome.com/) untuk glyphy yang digunakan dan [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
 
     Berikutnya lakukan sesuai keinginan anda.
-
-
+ 
+  * cava Powered by [Karstav](https://github.com/karlstav/cava)
+  
   * Polybar powered by
     [jaagr](https://github.com/jaagr/polybar)
 
@@ -110,6 +111,8 @@ _**NOTE :** You can found **```how to install```** them on official page_
 
   * Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
 
+ * cava Powered by [Karstav](https://github.com/karlstav/cava)
+
   * oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
     * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
@@ -118,8 +121,6 @@ _**NOTE :** You can found **```how to install```** them on official page_
     * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
 
     * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
-
-    * cava Powered by [Karstav](https://github.com/karlstav/cava)
 
     * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
 
