@@ -7,14 +7,17 @@ My DotFiles
 </h1>
 </p>
 
-# **INDONESIAN**
-  Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
-
 ## Gnome di Manjaro
   ![ss1](/Screenshoot/ss1.png)
+  Run on the screen : neofetch, vis
 
 ## KDE di Manjaro
   ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
+  Run on the screen : neofetch, cava, spacevim 
+
+
+# **INDONESIAN**
+  Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
 
   _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
 
@@ -110,6 +113,8 @@ _**NOTE :** You can found **```how to install```** them on official page_
 
   * Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
 
+ * cava Powered by [Karstav](https://github.com/karlstav/cava)
+
   * oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
     * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
@@ -119,7 +124,7 @@ _**NOTE :** You can found **```how to install```** them on official page_
 
     * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
 
-    * cava Powered by [Karstav](https://github.com/karlstav/cava)
+   
 
     * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
 
