@@ -20,9 +20,9 @@ SPACESHIP_PROMPT_ORDER=(
   ruby
   php
   docker
-  venv
+  #venv
   conda
-  pyenv
+  #pyenv
   line_sep
   vi_mode
   jobs
@@ -102,6 +102,13 @@ SPACESHIP_NODE_SYMBOL=""
 SPACESHIP_NODE_DEFAULT_VERSION=""
 SPACESHIP_NODE_COLOR=""
 
+#PHP
+SPACESHIP_PHP_SHOW=true
+#SPACESHIP_PHP_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
+#SPACESHIP_PHP_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+SPACESHIP_PHP_SYMBOL="\uf457"
+SPACESHIP_PHP_COLOR="blue"
+
 # VENV
 SPACESHIP_VENV_SHOW=true
 SPACESHIP_VENV_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
@@ -110,8 +117,8 @@ SPACESHIP_VENV_COLOR="blue"
 
 # CONDA
 SPACESHIP_CONDA_SHOW=true
-SPACESHIP_CONDA_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
-SPACESHIP_CONDA_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
+#SPACESHIP_CONDA_PREFIX="$SPACESHIP_PROMPT_DEFAULT_PREFIX"
+#SPACESHIP_CONDA_SUFFIX="$SPACESHIP_PROMPT_DEFAULT_SUFFIX"
 SPACESHIP_CONDA_SYMBOL="🅒 "
 SPACESHIP_CONDA_COLOR="blue"
 
@@ -177,7 +184,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias ls='colorls -r --sf'
+alias lc='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
@@ -185,27 +192,29 @@ alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
 # alias for php server and lamp
 alias php-server-start='sudo systemctl start httpd mysqld && sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
 alias php-server-stop='sudo systemctl stop httpd mysqld && sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
-
 alias php-server-status=' sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
+alias steamAmd = "DRI_PRIME=1 steam"
+# alias for anaconda
+alias anaconda='source /home/ypraw/anaconda3/bin/activate'
 
-#alias anaconda='source /home/ypraw/anaconda3/bin/activate'
+#alias editor kate
+alias sukate="SUDO_EDITOR=kate sudoedit "
 
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-export PATH="/home/ypraw/anaconda3/bin:$PATH"
-
-# Weather widget on polybar (exec script weather.py)
+export PATH="/home/$USER/anaconda3/bin:$PATH"
+export PATH=$HOME/.config/composer/vendor/bin:$PATH
+#export PATH="~/.npm-global/bin:$PATH"
+#Weather widget on polybar (exec script weather.py)
 #export weather="$(~/.config/polybar/weather.py)"
 
 # Polybar adding
 #export RUN="$(bash ~/.config/polybar/launch.sh)"
 #exec sh ~/.config/polybar/launch.sh
-if [[ $TERM == xterm-termite ]]; then
-  . /etc/profile.d/vte.sh
-  __vte_prompt_command
-fi
+
 
 source "/home/ypraw/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-source ./	zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/ypraw/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#alias create-react-app="~/.npm-global/lib/node_modules/create-react-app/index.js"
