@@ -8,126 +8,143 @@ My DotFiles
 </p>
 
 ## Gnome di Manjaro
-  ![ss1](/Screenshoot/ss1.png)
-  Run on the screen : neofetch, vis
+
+![ss1](/Screenshoot/ss1.png)
+Run on the screen : neofetch, vis
 
 ## KDE di Manjaro
-  ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
-  Run on the screen : neofetch, cava, spacevim 
 
+![ss2](/Screenshoot/Screenshot_20180330_202353.png)
+Run on the screen : neofetch, cava, spacevim
 
-# **INDONESIAN**
-  Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
+# **INDONESIA**
 
-  _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
+Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
 
-  > Untuk citra manjaro, dapat diunduh di [Manjaro Page](https://manjaro.org)
+## Pengenalan
 
-  Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berikut :
+_Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
 
-  * Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
+> Untuk citra manjaro, dapat diunduh di [Manjaro Page](https://manjaro.org)
 
-    Untuk mengetes apakah konfigurasi fontawesome sudah dikenali pada system anda, cobalah untuk membuka terminal dan ketikkan kode berikut,
+Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berikut :
 
-    ```bash
-     perl -CS -E 'say "\x{f19c}"'
-    ```
-    ![ss3](/Screenshoot/Screenshot_20180330_235416.png)
+* Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
 
-    Jika hasilnya adalah icon university seperti gambar diatas, maka masukkan perintah ini pada file config neofetch anda.
-    Konfigurasi dapat dilihat [disini](/neofetch).
+  Saya merubah konfigurasi default neofetch menggunakan fontawesome.
 
-    ```bash
-    info "$(perl -CS -E 'say "\x{f19c}"') " title
-    ```
+  Untuk mengetes apakah konfigurasi fontawesome sudah dikenali pada system anda, cobalah untuk membuka terminal dan ketikkan kode berikut,
 
-    Saya menggunakan [**font awesome**](https://fontawesome.com/) untuk glyphy yang digunakan dan [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
+  ```bash
+   perl -CS -E 'say "\x{f19c}"'
+  ```
 
-    Berikutnya lakukan sesuai keinginan anda.
+  ![ss3](/Screenshoot/Screenshot_20180330_235416.png)
 
+  Jika hasilnya adalah icon university seperti gambar diatas, maka masukkan perintah ini pada file config neofetch anda.
+  Konfigurasi dapat dilihat [disini](/neofetch).
 
-  * Polybar powered by
-    [jaagr](https://github.com/jaagr/polybar)
+  ```bash
+  info "$(perl -CS -E 'say "\x{f19c}"') " title
+  ```
 
-      > Konfigurasi dapat dilihat [disini](/.config/polybar)
+  Saya menggunakan [**font awesome**](https://fontawesome.com/) untuk glyphy yang digunakan dan dapat didownload disini[**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
 
-  * Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
+  Berikutnya lakukan sesuai keinginan anda.
 
-  * Pali color scheme powered by [myccoll](https://github.com/Mayccoll/Gogh)
+* Polybar powered by
+  [jaagr](https://github.com/jaagr/polybar)
 
-  * Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
+  > Konfigurasi dapat dilihat [disini](/.config/polybar)
 
-  * oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
-    * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
 
-    * Spaceship-zsh-theme Powered by [Spaceship-zsh-theme](https://github.com/denysdovhan/spaceship-zsh-theme)
+* Pali color scheme powered by [myccoll](https://github.com/Mayccoll/Gogh)
 
-    * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
+* Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
 
-    * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
+* oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
 
-    * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
+  * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+  * Spaceship-zsh-theme Powered by [Spaceship-zsh-theme](https://github.com/denysdovhan/spaceship-zsh-theme)
+
+  * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
+
+  * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
+
+  * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+* Spacevim powered by [Spacevim](https://github.com/SpaceVim/SpaceVim#linux-and-macos)
+
+* Colorls powered by [athityakumar](https://github.com/athityakumar/colorls)
 
 # English
+
 This repository contains all configuration for my linux desktop appearance.
 And this is a list of libraries or apps i use.
 
-_**NOTE :** You can found **```how to install```** them on official page_
+_**NOTE :** You can found **`how to install`** them on official page_
 
 * Neofetch powered by [dylanaraps](https://github.com/dylanaraps/neofetch)
-    
-    To use my config [here](/neofetch), your terminal must support fontawesome.
-    Run the command below,
 
-    ```bash
-     perl -CS -E 'say "\x{f19c}"'
-    ```
-    ![ss4](/Screenshoot/Screenshot_20180330_235416.png)
+  To use my config [here](/neofetch), your terminal must support fontawesome.
+  Run the command below,
 
-    if you see the university icon, you can edit neofetch config with command subtitution below this,
-        
-    example
+  ```bash
+   perl -CS -E 'say "\x{f19c}"'
+  ```
 
-    ```bash
-    info "$(perl -CS -E 'say "\x{f19c}"') " title
-    ```
-    and add alias on .bashrc or .zshrc with following command for the example, 
+  ![ss4](/Screenshoot/Screenshot_20180330_235416.png)
 
-    ```bash
-    alias neo='neofetch --config ~/path/to/neofetch/config.conf'
-    ```
+  if you see the university icon, you can edit neofetch config with command subtitution below this,
 
-    I used [**font awesome**](https://fontawesome.com/) for the glyphy and [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
+  example
 
-    and happy hacking XD.
+  ```bash
+  info "$(perl -CS -E 'say "\x{f19c}"') " title
+  ```
 
+  and add alias on .bashrc or .zshrc with following command for the example,
 
-  * Polybar powered by
-    [jaagr](https://github.com/jaagr/polybar)
+  ```bash
+  alias neo='neofetch --config ~/path/to/neofetch/config.conf'
+  ```
 
-      > config file  [here](/.config/polybar)
+  I used [**font awesome**](https://fontawesome.com/) for the glyphy and [**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
 
-  * Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
+  and happy hacking XD.
 
-  * Pali color scheme powered by [myccoll](https://github.com/Mayccoll/Gogh)
+* Polybar powered by
+  [jaagr](https://github.com/jaagr/polybar)
 
-  * Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
+  > config file [here](/.config/polybar)
 
- * cava Powered by [Karstav](https://github.com/karlstav/cava)
+* Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
 
-  * oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
-    * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* Pali color scheme powered by [myccoll](https://github.com/Mayccoll/Gogh)
 
-    * Spaceship-zsh-theme Powered by [Spaceship-zsh-theme](https://github.com/denysdovhan/spaceship-zsh-theme)
+* Vimix-gtk-theme-git on [AUR](https://aur.archlinux.org/packages/vimix-gtk-themes-git/)
 
-    * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
+* cava Powered by [Karstav](https://github.com/karlstav/cava)
 
-    * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
+* oh-my-zsh powered by [robbyrussell](https://github.com/robbyrussell/oh-my-zsh)
 
-   
+  * Autosugestions Powered by [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+  * Spaceship-zsh-theme Powered by [Spaceship-zsh-theme](https://github.com/denysdovhan/spaceship-zsh-theme)
+
+  * Source-Code-Pro-powerline Powered by [Powerline](https://github.com/powerline/fonts)
+
+  * awsome-terminal-fonts Powered by [gabrielelana](https://github.com/gabrielelana/awesome-terminal-fonts)
+
 
     * zsh-syntax-highlighgting powered by [zsh-user](https://github.com/zsh-users/zsh-syntax-highlighting)
 
+* Spacevim powered by [Spacevim](https://github.com/SpaceVim/SpaceVim#linux-and-macos)
+
+* Colorls powered by [athityakumar](https://github.com/athityakumar/colorls)
+
 # **License**
 
-  Source is available under the [Mit License](LICENSE.md)
+Source is available under the [Mit License](LICENSE.md)
