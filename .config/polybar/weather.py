@@ -8,7 +8,7 @@ import requests
 
 
 city = "Semarang" # Adding your city 
-api_key = "Your Api Key" # Adding your Api Key
+api_key = "7a4bc3de167d51e8b954f52eaedab8e6" # Adding your Api Key
 
 weather2 = requests.get("http://api.openweathermap.org/data/2.5/weather?q={}&APPID={}".format(city, api_key))
 result = json.loads(weather2.text)
