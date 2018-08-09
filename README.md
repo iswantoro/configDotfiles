@@ -17,6 +17,11 @@ Run on the screen : neofetch, vis
 ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
 Run on the screen : neofetch, cava, spacevim
 
+## Openbox di Manjaro
+![ss3](/Screenshoot/new.png)
+run on the screen : neofetch, cava, tty-clock, diamond script python
+bar: polybar
+
 # **INDONESIA**
 
 Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
