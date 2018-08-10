@@ -1,3 +1,7 @@
+# Blur Mode Konsole
+
+
+
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -193,15 +197,15 @@ alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
 alias php-server-start='sudo systemctl start httpd mysqld && sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
 alias php-server-stop='sudo systemctl stop httpd mysqld && sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
 alias php-server-status=' sudo systemctl status httpd mysqld | grep -i --max-count=4 "httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB 10.1.31 database server"'
-alias steamAmd = "DRI_PRIME=1 steam"
+alias steamAmd='DRI_PRIME=1 steam'
 # alias for anaconda
-alias anaconda='source /home/ypraw/anaconda3/bin/activate'
+#alias anaconda='source /home/ypraw/anaconda3/bin/activate'
 
 #alias editor kate
 alias sukate="SUDO_EDITOR=kate sudoedit "
 
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-export PATH="/home/$USER/anaconda3/bin:$PATH"
+#export PATH="/home/$USER/anaconda3/bin:$PATH"
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
 #export PATH="~/.npm-global/bin:$PATH"
 #Weather widget on polybar (exec script weather.py)
@@ -216,5 +220,14 @@ source "/home/ypraw/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #alias create-react-app="~/.npm-global/lib/node_modules/create-react-app/index.js"
+#
+
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+#(cat ~/.cache/wal/sequences|clear &)
+
+# To add support for TTYs this line can be optionally added.
+#source ~/.cache/wal/colors-tty.sh
