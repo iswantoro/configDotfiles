@@ -84,6 +84,7 @@ Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berik
 
 * Colorls powered by [athityakumar](https://github.com/athityakumar/colorls)
 
+* Openbox theme hybrid with some tweaks on colors field powered by [kexolino](https://www.deviantart.com/kexolino/art/Hybrid-Openbox-Theme-429202525)
 # English
 
 This repository contains all configuration for my linux desktop appearance.
