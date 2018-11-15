@@ -1,3 +1,5 @@
+# Restore pywall
+cat ~/.cache/wal/sequences
 # Blur Mode Konsole
 for key in ${(k)icons[@]}
 do
@@ -196,7 +198,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lc='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
-alias neo='neofetch --config ~/Programming/Linux/neofetch/config.conf'
+alias neo='neofetch --config ~/Programming/linux/configDotfiles/neofetch/config.conf'
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
 
 # alias for php server and lamp
@@ -212,7 +214,7 @@ alias sukate="SUDO_EDITOR=kate sudoedit "
 
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 #export PATH="$HOME/miniconda3/bin:$PATH"
-. /home/ypraw/miniconda3/etc/profile.d/conda.sh
+#. /home/ypraw/miniconda3/etc/profile.d/conda.sh
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
 #export PATH="~/.npm-global/bin:$PATH"
 #Weather widget on polybar (exec script weather.py)
