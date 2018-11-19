@@ -1,8 +1,10 @@
 GRUB_DEFAULT=saved
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR='Manjaro'
-GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=Linux acpi_osi='!Windows 2012' quiet loglevel=3 radeon.dpm=1 radeon.audio=1 i915.modeset=1 ipv6.disable=1 rd.udev.log_priority=3 pcie_aspm=force nopti spectre_v2=off"
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet acpi_osi=! acpi_osi='Windows 2018' loglevel=3 radeon.dpm=1 radeon.audio=1 i915.semaphores=1 i915.enable_fbc=0 i915.modeset=1 i915.enable_rc=7 i915.enable_dc=2 i915.enable_ppgtt=3 i915.enable_guc_loading=1 i915.lvds_channel_mode=2 i915.lvds_use_ssc=1 ipv6.disable=1 rd.udev.log_priority=3 acpi=force acpi_enforce_resources=lax pcie_aspm=force nopti spectre_v2=off"
 GRUB_CMDLINE_LINUX="amdgpu.cik_support=1 radeon.cik_support=1 kernel.nmi_watchdog=0"
+
 
 # If you want to enable the save default function, uncomment the following
 # line, and set GRUB_DEFAULT to saved.
