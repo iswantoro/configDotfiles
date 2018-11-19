@@ -202,9 +202,10 @@ alias neo='neofetch --config ~/Programming/linux/configDotfiles/neofetch/config.
 alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
 
 # alias for php server and lamp
-alias php-server-start="sudo systemctl start httpd mysqld && sudo systemctl status httpd mysqld | sed -n -e '1p' -n -e '3p' -n -e '16p' -n -e '18p'"
-alias php-server-stop="sudo systemctl stop httpd mysqld && sudo systemctl status httpd mysqld | sed -n -e '1p' -n -e '3p' -n -e '16p' -n -e '18p'"
-alias php-server-status="sudo systemctl status httpd mysqld | sed -n -e '1p' -n -e '3p' -n -e '16p' -n -e '18p'"
+alias php-server-start="sudo systemctl start httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
+alias php-server-stop="sudo systemctl stop httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
+alias php-server-status="sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
+alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 alias steamAmd='DRI_PRIME=1 steam'
 # alias for anaconda
 #alias anaconda='source /home/ypraw/anaconda3/bin/activate'
