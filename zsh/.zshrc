@@ -1,20 +1,12 @@
 # Restore pywall
 cat ~/.cache/wal/sequences
-# Blur Mode Konsole
-for key in ${(k)icons[@]}
-do
-    if [[ ! $key =~ 'SEPARATOR' ]]
-    then
-        icons[$key]=" ${icons[$key]} "
-    fi
-done
 
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/ypraw/.oh-my-zsh
+export ZSH=/home/ypraw/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -23,6 +15,7 @@ ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
   time
   user
+  
   host
   dir
   git
@@ -53,24 +46,25 @@ SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "
 # TIME
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_TIME_COLOR="yellow"
-SPACESHIP_TIME_FORMAT='\uf274 %D{ %a,%d %B %Y} '
+SPACESHIP_TIME_FORMAT='\uf274 %D{ %a,%d %B %Y}'
 
 # USER
-SPACESHIP_USER_PREFIX=""
+SPACESHIP_USER_PREFIX="with "
 SPACESHIP_USER_SUFFIX=""
-SPACESHIP_USER_COLOR="yellow"
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_COLOR="$COLOR 6"
 SPACESHIP_USER_COLOR_ROOT="red"
 
 # HOST
-
 SPACESHIP_HOST_PREFIX="@:( "
 SPACESHIP_HOST_SUFFIX=")"
 SPACESHIP_HOST_COLOR="green"
 
 # DIR
-SPACESHIP_DIR_PREFIX=""
+SPACESHIP_DIR_PREFIX=" in "
+SPACESHIP_DIR_SUFFIX=" "
 SPACESHIP_DIR_TRUNC=2
-SPACESHIP_DIR_COLOR="yellow"
+SPACESHIP_DIR_COLOR="$COLOR 2"
 
 # GIT
 SPACESHIP_GIT_SHOW=true
@@ -207,6 +201,7 @@ alias php-server-stop="sudo systemctl stop httpd mysqld && sudo systemctl status
 alias php-server-status="sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 alias steamAmd='DRI_PRIME=1 steam'
+alias weather-check="curl wttr.in/Semarang\?0"
 # alias for anaconda
 #alias anaconda='source /home/ypraw/anaconda3/bin/activate'
 
