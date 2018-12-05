@@ -62,11 +62,13 @@ _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa ag
     ![ss3](/Screenshoot/Screenshot_20180330_235416.png)
 
     Jika hasilnya adalah icon university seperti gambar diatas, maka masukkan perintah ini pada file config neofetch anda.
-    Konfigurasi dapat dilihat [disini](/neofetch/).
 
     ```bash
     info "$(perl -CS -E 'say "\x{f19c}"') " title
     ``` 
+    lakukan sesuai yang anda inginkan, atau anda dapat mencotoh konfigurasi milik saya yang dapat anda lihat [disini](/neofetch/).
+
+    Jika hasil masih tanda kotak, anda dapat menginstall font seperti terminal awesome font atau nerd font, dalam konfigurasi ini saya menggunakan nerd font, link tertera di bawah.
     
   ### FONT 
   * Saya menggunakan [**font awesome**](https://fontawesome.com/) untuk glyphy yang digunakan dan dapat didownload disini[**awesome-terminal-fonts**](https://github.com/gabrielelana/awesome-terminal-fonts).
