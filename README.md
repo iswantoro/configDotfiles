@@ -1,7 +1,11 @@
 <p align="center"><h1>
 <bold>
-
 My DotFiles Configurations
+<p align="center">
+	<a name="top" href="https://github.com/ypraw/configDotfiles"><img src="https://github.com/ypraw/configDotfiles/tree/master/Screenshoot/tag.png">
+	</a>
+</p>
+
 </bold>
 </h1>
 </p>
@@ -23,18 +27,18 @@ My DotFiles Configurations
 
 # **Screenshoot**
 
-### _Gnome di Manjaro_
+### _Manjaro Gnome Version_
 ![ss1](/Screenshoot/ss1.png)
 > Run on the screen : neofetch, vis
 
-### **_KDE di Manjaro_**
+### **_Manjaro Plasma Version_**
 ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
 > Run on the screen : neofetch, cava, spacevim
 
 ![ss4](Screenshoot/Screenshot_20181205_174338.png)
 > Run on the screen : neofetch, cava
 
-### Openbox di Manjaro
+### **_Manjaro Openbox Version_**
 ![ss3](/Screenshoot/new.png)
 > run on the screen : neofetch, cava, tty-clock, diamond script python 
 > bar: polybar
@@ -42,15 +46,15 @@ My DotFiles Configurations
 
 # **INDONESIA**
 
-Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk dekstop linux saya.
+Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk desktop linux saya.
 
-## Pengenalan
+## Pengenalan Manjaro
 
 _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
 
 > Untuk citra manjaro, dapat diunduh di [Manjaro Page](https://manjaro.org)
 
-Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berikut :
+## Ricing Package
 
   ### System Info
   
@@ -61,12 +65,10 @@ Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berik
     ```bash
     perl -CS -E 'say " {f19c}"'
     ```
-    
-
     ![ss3](/Screenshoot/Screenshot_20180330_235416.png)
 
     Jika hasilnya adalah icon university seperti gambar diatas, maka masukkan perintah ini pada file config neofetch anda.
-    Konfigurasi dapat dilihat [disini](/neofetch).
+    Konfigurasi dapat dilihat [disini](/neofetch/).
 
     ```bash
     info "$(perl -CS -E 'say "\x{f19c}"') " title
@@ -111,5 +113,4 @@ Aplikasi yang saya gunakan untuk mempercantik desktop saya, adalah sebagai berik
 
 
 # **License**
-
 Source is available under the [Mit License](LICENSE.md)
