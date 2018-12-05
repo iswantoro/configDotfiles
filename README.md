@@ -10,11 +10,11 @@
 | :--- | :---- |
 | OS  | Manjaro |
 | Desktop Environtment | KDE Plasma |
-| Device  | Lenovo Ideapad 110-14isk |
+| Device Host  | Lenovo Ideapad 110-14isk |
 | Shell | Zsh, bash |
 | DM | sddm |
 | WM | kwin, openbox |
-| icons | papirus, luv icons |
+| Icons | papirus, luv icons |
 | Font | TerminessTTF Nerd Font Medium |
 | Terminal | xfce4-terminal |
 | Text Editor | spacevim, visual studio code |
@@ -38,17 +38,17 @@
 > bar: polybar
 
 
-# **INDONESIA**
+# **The DotFiles**
 
 Repository ini berisikan beberapa konfigurasi yang saya gunakan untuk desktop linux saya.
 
-## Pengenalan Manjaro
+# **Pengenalan Manjaro**
 
-_Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa agar memanjakan pengguna awam untuk mencoba linux berbasis arch_
+_Manjaro adalah salah satu os turunan arch linux yang didesign untuk memudahkan pengguna awam yang ingin mencoba distribusi berbasiskan arch linux tanpa harus repot dengan segala macam konfigurasi seperti halnya arch linux itu sendiri._
 
 > Untuk citra manjaro, dapat diunduh di [Manjaro Page](https://manjaro.org)
 
-## Ricing Package
+# **Ricing Package**
 
   ### System Info
   
@@ -104,7 +104,7 @@ _Manjaro adalah salah satu os turunan arch linux yang dirubah sedemikian rupa ag
 
   ### OTHERS
   * Colorls iconize ls command powered by [athityakumar](https://github.com/athityakumar/colorls)
-
+  * pipes.sh Animated pipes terminal screensaver powered by [pipeseroni](https://github.com/pipeseroni/pipes.sh#options)
 
 
 
