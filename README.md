@@ -2,7 +2,7 @@
 <bold>
 My DotFiles Configurations
 <p align="center">
-	<a name="top" href="https://github.com/ypraw/configDotfiles"><img src="/Screenshoot/tag.png
+	<a name="top" href="https://github.com/ypraw/configDotfiles"><img src="https://raw.githubusercontent.com/ypraw/configDotfiles/master/Screenshoot/tag.png
   ">
 	</a>
 </p>
