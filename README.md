@@ -1,13 +1,7 @@
-<p align="center"><h1>
-<bold>
-My DotFiles Configurations
+
 <p align="center">
 	<a name="top" href="https://github.com/ypraw/configDotfiles"><img src="https://raw.githubusercontent.com/ypraw/configDotfiles/master/Screenshoot/tag-logo.png">
 	</a>
-</p>
-
-</bold>
-</h1>
 </p>
 
 # Details Spesifications
