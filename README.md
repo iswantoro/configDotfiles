@@ -83,6 +83,7 @@ _Manjaro adalah salah satu os turunan arch linux yang didesign untuk memudahkan 
 
   ### Media Visualizer
   * Vis powered by [dpayne](https://github.com/dpayne/cli-visualizer)
+  * Glava powered by [wacossusca34](https://github.com/wacossusca34/glava)
 
   ### Colorscheme
   * Pali color scheme powered by [myccoll](https://github.com/Mayccoll/Gogh)
