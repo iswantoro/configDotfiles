@@ -1,21 +1,39 @@
-# Restore pywall
-cat ~/.cache/wal/sequences
+# zplug init
+export ZPLUG_HOME=$HOME/.zplug
 
+[[ ! -f $ZPLUG_HOME/init.zsh ]] && git clone https://github.com/zplug/zplug $ZPLUG_HOME
+source $ZPLUG_HOME/init.zsh
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# do self-manage
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# auto-close quotes and brackets like a pro
+zplug 'hlissner/zsh-autopair', defer:2
+
+# another eyecandy
+zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
+
+# finally install and load those plugins
+zplug check || zplug install
+zplug load
+
+# returning command and folder completion when line is empty
+# like a bash, but better
+blanktab() { [[ $#BUFFER == 0 ]] && CURSOR=3 zle list-choices || zle expand-or-complete }
+zle -N blanktab && bindkey '^I' blanktab
+
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ypraw/.oh-my-zsh
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#############################
+# Customized Spaceship Theme#
+#############################
+
 ZSH_THEME="spaceship"
 SPACESHIP_PROMPT_ORDER=(
   time
   user
-  
   host
   dir
   git
@@ -35,7 +53,7 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 #PROMPT
-SPACESHIP_CHAR_SYMBOL='%F{green}\u2981%F{yellow}\u2981%F{red}\u2981 '
+SPACESHIP_CHAR_SYMBOL='%F{$COLOR 5}\u25cf%F{$COLOR 1}\u25cf%F{$COLOR 2}\u25cf '
 SPACESHIP_PROMPT_ADD_NEWLINE=true
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_PROMPT_PREFIXES_SHOW=true
@@ -45,14 +63,14 @@ SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "
 
 # TIME
 SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_COLOR="yellow"
-SPACESHIP_TIME_FORMAT='\uf274 %D{ %a,%d %B %Y}'
+SPACESHIP_TIME_COLOR="$COLOR 3"
+SPACESHIP_TIME_FORMAT="\u29d0 %D{ %a,%d %B %Y} "
 
 # USER
 SPACESHIP_USER_PREFIX="with "
 SPACESHIP_USER_SUFFIX=""
 SPACESHIP_USER_SHOW=always
-SPACESHIP_USER_COLOR="$COLOR 6"
+SPACESHIP_USER_COLOR="$COLOR 0"
 SPACESHIP_USER_COLOR_ROOT="red"
 
 # HOST
@@ -64,7 +82,7 @@ SPACESHIP_HOST_COLOR="green"
 SPACESHIP_DIR_PREFIX=" in "
 SPACESHIP_DIR_SUFFIX=" "
 SPACESHIP_DIR_TRUNC=2
-SPACESHIP_DIR_COLOR="$COLOR 2"
+SPACESHIP_DIR_COLOR="$COLOR 6"
 
 # GIT
 SPACESHIP_GIT_SHOW=true
@@ -149,90 +167,36 @@ SPACESHIP_EXIT_CODE_SUFFIX=") "
 SPACESHIP_EXIT_CODE_SYMBOl="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
 
-# zsh-syntax-highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
-ZSH_HIGHLIGHT_PATTERNS+=("rm -rf *" "fg=white,bold,bg=green")
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[path]="fg=green"
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]="fg=blue"
-ZSH_HIGHLIGHT_STYLES[alias]="fg=yellow"
-ZSH_HIGHLIGHT_STYLES[builtin]="fg=148"
-ZSH_HIGHLIGHT_STYLES[function]="fg=cyan"
-ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]="fg=cyan"
-ZSH_HIGHLIGHT_STYLES[command]='fg=yellow'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
-ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=red'
-ZSH_HIGHLIGHT_STYLES[commandseparator]="fg=green"
-ZSH_HIGHLIGHT_STYLES[redirection]="fg=magenta"
-ZSH_HIGHLIGHT_STYLES[bracket-level-1]="fg=cyan,bold"
-ZSH_HIGHLIGHT_STYLES[bracket-level-2]="fg=green,bold"
-ZSH_HIGHLIGHT_STYLES[bracket-level-3]="fg=magenta,bold"
-ZSH_HIGHLIGHT_STYLES[bracket-level-4]="fg=red,bold"
-ZSH_HIGHLIGHT_STYLES[globbing]='none'
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=green  '
-ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=blue'
+###END THEME CONFIG###
 
 
-plugins=(git)
+
+#######################
+# PLUGINS OH-MY-ZSH   #
+######################
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lc='colorls -r --sf'
 alias downloadmp3='youtube-dl -x --audio-format mp3'
 alias neo='neofetch --config ~/Programming/linux/configDotfiles/neofetch/config.conf'
-alias polibar='cd /home/ypraw/.config/polybar && ./launch.sh '
 
 # alias for php server and lamp
 alias php-server-start="sudo systemctl start httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 alias php-server-stop="sudo systemctl stop httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 alias php-server-status="sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
 alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl status httpd mysqld |  grep -i --max-count=4 'httpd.service - Apache Web Server\|active:\|mariadb.service - MariaDB' "
-alias steamAmd='DRI_PRIME=1 steam'
+
 alias weather-check="curl wttr.in/Semarang\?0"
-# alias for anaconda
-#alias anaconda='source /home/ypraw/anaconda3/bin/activate'
 
 #alias editor kate
 alias sukate="SUDO_EDITOR=kate sudoedit "
 
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-#export PATH="$HOME/miniconda3/bin:$PATH"
-#. /home/ypraw/miniconda3/etc/profile.d/conda.sh
+
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
+
 export PATH="~/.npm-global/bin:$PATH"
-#Weather widget on polybar (exec script weather.py)
-#export weather="$(~/.config/polybar/weather.py)"
-
-# Polybar adding
-#export RUN="$(bash ~/.config/polybar/launch.sh)"
-#exec sh ~/.config/polybar/launch.sh
-
 
 source "/home/ypraw/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-#alias create-react-app="~/.npm-global/lib/node_modules/create-react-app/index.js"
-#
-
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-#(cat ~/.cache/wal/sequences|clear &)
-
-# To add support for TTYs this line can be optionally added.
-#source ~/.cache/wal/colors-tty.sh
