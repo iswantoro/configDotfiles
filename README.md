@@ -109,4 +109,4 @@ _Manjaro adalah salah satu os turunan arch linux yang didesign untuk memudahkan 
 
 
 # **License**
-Source is available under the [Mit License](LICENSE.md)
+Source is available under the [Mit License](License.md)
