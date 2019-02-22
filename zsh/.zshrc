@@ -174,7 +174,7 @@ SPACESHIP_EXIT_CODE_COLOR="red"
 #######################
 # PLUGINS OH-MY-ZSH   #
 ######################
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -190,6 +190,11 @@ alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl 
 
 alias weather-check="curl wttr.in/Semarang\?0"
 
+# ls info
+alias lsd="exa -l -h"
+
+# cat alias
+alias prin="bat"
 #alias editor kate
 alias sukate="SUDO_EDITOR=kate sudoedit "
 
