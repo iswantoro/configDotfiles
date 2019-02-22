@@ -7,21 +7,15 @@ source $ZPLUG_HOME/init.zsh
 # do self-manage
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-# auto-close quotes and brackets like a pro
+# auto-close brackets
 zplug 'hlissner/zsh-autopair', defer:2
 
-# another eyecandy
+
 zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
 
-# finally install and load those plugins
+# install all
 zplug check || zplug install
 zplug load
-
-# returning command and folder completion when line is empty
-# like a bash, but better
-blanktab() { [[ $#BUFFER == 0 ]] && CURSOR=3 zle list-choices || zle expand-or-complete }
-zle -N blanktab && bindkey '^I' blanktab
-
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ypraw/.oh-my-zsh
@@ -167,7 +161,7 @@ SPACESHIP_EXIT_CODE_SUFFIX=") "
 SPACESHIP_EXIT_CODE_SYMBOl="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
 
-###END THEME CONFIG###
+###END THEME  SPACESHIP CONFIG###
 
 
 
