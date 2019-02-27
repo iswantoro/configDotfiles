@@ -27,7 +27,7 @@
 
 ### **_Manjaro Plasma Version_**
 ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
-> Run on the screen : neofetch, cava, spacevim
+> Run on the screen : neofetch, glava
 
 ![ss4](Screenshoot/Screenshot_20181205_174338.png)
 > Run on the screen : neofetch, cava
