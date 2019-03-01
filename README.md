@@ -16,7 +16,7 @@
 | WM | kwin, openbox |
 | Icons | papirus, luv icons |
 | Font | TerminessTTF Nerd Font Medium |
-| Terminal | xfce4-terminal |
+| Terminal | konsole |
 | Text Editor | spacevim, visual studio code |
 
 # **Screenshoot**
