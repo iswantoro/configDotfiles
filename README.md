@@ -21,9 +21,8 @@
 
 # **Screenshoot**
 
-### _Manjaro Gnome Version_
-![ss1](/Screenshoot/ss1.png)
-> Run on the screen : neofetch, vis
+![ss1](/Screenshoot/ss2.png)
+> Run on the screen : neofetch, tty-clock, lsd
 
 ### **_Manjaro Plasma Version_**
 ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
