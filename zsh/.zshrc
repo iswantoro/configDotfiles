@@ -7,15 +7,21 @@ source $ZPLUG_HOME/init.zsh
 # do self-manage
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-# auto-close brackets
+# auto-close quotes and brackets like a pro
 zplug 'hlissner/zsh-autopair', defer:2
 
-
+# another eyecandy
 zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
 
-# install all
+# finally install and load those plugins
 zplug check || zplug install
 zplug load
+
+# returning command and folder completion when line is empty
+# like a bash, but better
+blanktab() { [[ $#BUFFER == 0 ]] && CURSOR=3 zle list-choices || zle expand-or-complete }
+zle -N blanktab && bindkey '^I' blanktab
+
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/ypraw/.oh-my-zsh
@@ -47,7 +53,7 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 #PROMPT
-SPACESHIP_CHAR_SYMBOL='%F{$COLOR 5}\u25cf%F{$COLOR 1}\u25cf%F{$COLOR 2}\u25cf '
+SPACESHIP_CHAR_SYMBOL='%F{$COLOR 3}\u25cf%F{$COLOR 3}\u25cf%F{$COLOR 3}\u25cf '
 SPACESHIP_PROMPT_ADD_NEWLINE=true
 SPACESHIP_PROMPT_SEPARATE_LINE=true
 SPACESHIP_PROMPT_PREFIXES_SHOW=true
@@ -161,7 +167,7 @@ SPACESHIP_EXIT_CODE_SUFFIX=") "
 SPACESHIP_EXIT_CODE_SYMBOl="✘ "
 SPACESHIP_EXIT_CODE_COLOR="red"
 
-###END THEME  SPACESHIP CONFIG###
+###END THEME CONFIG###
 
 
 
@@ -185,7 +191,7 @@ alias php-server-restart="sudo systemctl restart httpd mysqld && sudo systemctl 
 alias weather-check="curl wttr.in/Semarang\?0"
 
 # ls info
-alias lsd="exa -l -h"
+alias lx="exa -l -h"
 
 # cat alias
 alias prin="bat"
