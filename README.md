@@ -22,6 +22,7 @@
 # **Screenshoot**
 
 ![ss1](/Screenshoot/ss2.png)
+
 | Info | Value |
 | :--- | :---- |
 | Run on the screen | neofetch |
@@ -29,7 +30,9 @@
 | | lsd |
 
 ### **_Manjaro Plasma Version_**
+
 ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
+
 | Info | Value |
 | :--- | :---- |
 | Run on the screen | neofetch |
