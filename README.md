@@ -22,19 +22,30 @@
 # **Screenshoot**
 
 ![ss1](/Screenshoot/ss2.png)
-> Run on the screen : neofetch, tty-clock, lsd
+| Info | Value |
+| :--- | :---- |
+| Run on the screen | neofetch |
+| | tty-clock|
+| | lsd |
 
 ### **_Manjaro Plasma Version_**
 ![ss2](/Screenshoot/Screenshot_20180330_202353.png)
-> Run on the screen : neofetch, glava
-
-![ss4](Screenshoot/Screenshot_20181205_174338.png)
-> Run on the screen : neofetch, cava
+| Info | Value |
+| :--- | :---- |
+| Run on the screen | neofetch |
+| | glava|
+| | wttr.in |
 
 ### **_Manjaro Openbox Version_**
 ![ss3](/Screenshoot/new.png)
-> run on the screen : neofetch, cava, tty-clock, diamond script python 
-> bar: polybar
+| Info | Value |
+| :--- | :---- |
+| Run on the screen | neofetch |
+| | cava|
+| | tty-clock |
+| | python script |
+|bar | polybar|
+|runner | rofi| 
 
 
 # **The DotFiles**
@@ -65,7 +76,7 @@ _Manjaro adalah salah satu os turunan arch linux yang didesign untuk memudahkan 
     ```bash
     info "$(perl -CS -E 'say "\x{f19c}"') " title
     ``` 
-    lakukan sesuai yang anda inginkan, atau anda dapat mencotoh konfigurasi milik saya yang dapat anda lihat [disini](/neofetch/).
+    lakukan sesuai yang anda inginkan, atau anda dapat mencotoh konfigurasi milik saya yang dapat anda lihat  [disini](/neofetch/).
 
     Jika hasil masih tanda kotak, anda dapat menginstall font seperti terminal awesome font atau nerd font, dalam konfigurasi ini saya menggunakan nerd font, link tertera di bawah.
     
