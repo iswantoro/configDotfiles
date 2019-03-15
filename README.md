@@ -41,6 +41,7 @@
 
 ### **_Manjaro Openbox Version_**
 ![ss3](/Screenshoot/new.png)
+
 | Info | Value |
 | :--- | :---- |
 | Run on the screen | neofetch |
