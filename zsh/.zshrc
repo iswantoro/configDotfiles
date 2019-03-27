@@ -11,11 +11,20 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug 'hlissner/zsh-autopair', defer:2
 
 # another eyecandy
-zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
+# zplug 'zdharma/fast-syntax-highlighting', defer:2, hook-load:'FAST_HIGHLIGHT=()'
+
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-autosuggestions", defer:2
+zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
 
 # finally install and load those plugins
-zplug check || zplug install
-zplug load
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
 
 # returning command and folder completion when line is empty
 # like a bash, but better
@@ -24,7 +33,7 @@ zle -N blanktab && bindkey '^I' blanktab
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ypraw/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 #############################
 # Customized Spaceship Theme#
@@ -174,7 +183,7 @@ SPACESHIP_EXIT_CODE_COLOR="red"
 #######################
 # PLUGINS OH-MY-ZSH   #
 ######################
-plugins=(git zsh-autosuggestions sudo)
+plugins=(git sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -198,10 +207,10 @@ alias prin="bat"
 #alias editor kate
 alias sukate="SUDO_EDITOR=kate sudoedit "
 
-export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
 
 export PATH="~/.npm-global/bin:$PATH"
 
-source "/home/ypraw/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "$HOME/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
